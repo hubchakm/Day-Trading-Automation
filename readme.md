@@ -118,3 +118,18 @@ Open an issue or [contact me here](mailto:your@email.com)!
 ---
 
 **Happy trading!**
+
+---
+
+## C++ Version
+
+A simplified C++ implementation is provided in `cpp_project/`. It demonstrates an object-oriented approach with stubbed API calls and a `Makefile` for building:
+
+```bash
+cd cpp_project
+make
+./trader
+```
+
+The C++ code fetches real-time gainers from Yahoo Finance using libcurl and prints them. Actual trading logic would need to be implemented to interact with the Alpaca API.
+
