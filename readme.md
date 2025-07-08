@@ -123,7 +123,7 @@ Open an issue or [contact me here](mailto:your@email.com)!
 
 ## C++ Version
 
-A simplified C++ implementation is provided in `cpp_project/`. It demonstrates an object-oriented approach with stubbed API calls and a `Makefile` for building:
+A C++ implementation is provided in `cpp_project/`. Along with basic market scanning it now includes a lightweight backtesting engine, a risk manager and a high-frequency trading loop. It can be built with the provided `Makefile`:
 
 ```bash
 cd cpp_project
@@ -131,5 +131,5 @@ make
 ./trader
 ```
 
-The C++ code fetches real-time gainers from Yahoo Finance using libcurl and prints them. Actual trading logic would need to be implemented to interact with the Alpaca API.
+The program fetches real-time gainers from Yahoo Finance, runs a simple historical backtest if `historical.csv` is present and demonstrates a high frequency loop that polls current prices. Real trading logic remains stubbed but the infrastructure for risk controls and strategy testing is in place.
 
